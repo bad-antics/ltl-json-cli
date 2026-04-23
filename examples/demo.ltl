@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_json_cli
+
+import std::io
+use ltl_json_cli as lib
+
+fn main() {
+    io::println("ltl_json_cli demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
